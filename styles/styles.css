@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+.main-container {
+  height: 100%;
+  width: 100%;
+  background-color: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 31.6rem;
+}
+
+.title {
+  font-size: 10.9rem;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.sub-title {
+  font-size: 2.6rem;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 8.9rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  width: 31.6rem;
+  height: 4rem;
+  background-color: var(--input-color);
+  color: var(--text);
+  font-size: 2rem;
+  font-weight: 400;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  transition: 300ms;
+  padding-left: 2.3rem;
+  margin-bottom: 1.6rem;
+}
+
+.input:focus {
+  border: 1px solid var(--blue);
+}
+
+.box-enter {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5.8rem;
+}
+
+.link {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.button {
+  height: 4rem;
+  background-color: var(--blue);
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 400;
+  border: 1px solid var(--blue);
+  border-radius: 0.7rem;
+}
+
+.button-enter {
+  width: 15.2rem;
+  transition: 300ms;
+}
+
+.button-enter:hover {
+  background-color: transparent;
+  color: var(--blue);
+}
+
+.button-create {
+  width: 100%;
+  transition: 300ms;
+}
+
+.button-create:hover {
+  background-color: transparent;
+  color: var(--blue);
+}
+
+.image-content {
+  width: 50%;
+}
+
+.link {
+  margin-bottom: 2.5rem;
+}
+
+@media screen and (max-width: 786px) {
+  .title {
+    text-align: center;
+    font-size: 8rem;
+    margin-bottom: 1rem;
+  }
+
+  .sub-title {
+    text-align: center;
+  }
+
+  .button-create {
+    margin-bottom: 5rem;
+  }
+
+  .image-content {
+    width: 70%;
+  }
+}
